@@ -1,0 +1,3 @@
+_recentDirs() {
+  compadd -a -f dirstack
+}
