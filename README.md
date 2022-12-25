@@ -1,13 +1,27 @@
-# fzf tab widgets
+# fzf-tab widgets
 
-[zsh](https://www.zsh.org/) plugin providing widgets for [fzf-tab](https://github.com/Aloxaf/fzf-tab).
+Some widgets I use with the brilliant [fzf-tab](https://github.com/Aloxaf/fzf-tab), ymmv!
 
-## Usage
+#### Bookmarks
 
 ```zsh
-bindkey '^O' 'fzf-tab-complete-bookmarks' # shows contents of $bookmarks
-bindkey '^E' 'fzf-tab-complete-recent-dirs' # shows recently visited directories
+bookmarks=(
+  Downloads
+  bin
+  project
+)
+
+bindkey '^O' 'fzf-tab-complete-bookmarks'
 ```
+
+#### Recent directories
+
+```zsh
+bindkey '^E' 'fzf-tab-complete-recent-dirs'
+```
+
+- completion only includes directories that exist, as unable to move to deleted ones, can use `dirs` to review them if needed.
+- find persisting dirstack like [this](https://wiki.archlinux.org/title/zsh#Dirstack) useful for getting a reasonable history, ymmv!
 
 ## Installation
 
