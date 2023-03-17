@@ -4,10 +4,12 @@ functions[_autocd_orig]=${functions[_autocd]}
 # widgets call fzf-tab-complete which calls _autocd in some conexts
 # https://github.com/Aloxaf/fzf-tab/issues/65#issuecomment-602144985
 _autocd() {
-  if [[ -v completeRecentDirs ]]; then
-    _recentDirs
-  elif [[ -v completeBookmarks ]]; then
+  if [[ -v completeBookmarks ]]; then
     _bookmarks
+  elif [[ -v completeRecentDirs ]]; then
+    _recentDirs
+  elif [[ -v completeFind ]]; then
+    _find
   else
     _autocd_orig
   fi
