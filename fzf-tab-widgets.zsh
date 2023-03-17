@@ -11,3 +11,10 @@ fzf-tab-complete-bookmarks() {
   unset completeBookmarks
 }
 zle -N fzf-tab-complete-bookmarks
+
+fzf-tab-complete-find() {
+  export completeFind
+  fzf-tab-complete
+  unset completeFind
+}
+zle -N fzf-tab-complete-find

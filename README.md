@@ -14,7 +14,7 @@ bookmarks=(
   ~/tmp
 )
 
-bindkey '^O' 'fzf-tab-complete-bookmarks'
+bindkey '^B' 'fzf-tab-complete-bookmarks'
 ```
 
 #### Recent directories
@@ -25,6 +25,14 @@ bindkey '^E' 'fzf-tab-complete-recent-dirs'
 
 - only includes directories that exist in the completion, as unable to move to deleted ones, can use `dirs` to review them if needed.
 - find persisting dirstack like [this](https://wiki.archlinux.org/title/zsh#Dirstack) useful, ymmv!
+
+#### Find
+
+```zsh
+bindkey '^F' 'fzf-tab-complete-find'
+```
+
+find first 10000 files/directories under your current location, dot files/directories excluded
 
 ## Installation
 
