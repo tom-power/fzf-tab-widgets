@@ -2,7 +2,7 @@
 
 Some widgets I use with the brilliant [fzf-tab](https://github.com/Aloxaf/fzf-tab), ymmv!
 
-![demo](https://github.com/tom-power/fzf-tab-widgets/blob/master/assets/fzf-tab-widgets-demo.gif)
+![demo](https://github.com/tom-power/fzf-tab-widgets/blob/main/assets/fzf-tab-widgets-demo.gif)
 
 #### Bookmarks
 
