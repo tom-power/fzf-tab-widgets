@@ -7,7 +7,7 @@ Some widgets I use with the brilliant [fzf-tab](https://github.com/Aloxaf/fzf-ta
 #### Bookmarks
 
 ```zsh
-bookmarks=(
+export bookmarks=(
   ~/bin
   ~/Downloads
   ~/project
@@ -43,13 +43,13 @@ Depends on [fzf](https://github.com/junegunn/fzf) and [fzf-tab](https://github.c
 ### Zplug
 
 ```zsh
-zplug "tom-power/fzf-tab-widgets"
+zplug "tom-power/fzf-tab-widgets", at:main
 ```
 
 ### Antigen
 ```zsh
 # note https://github.com/Aloxaf/fzf-tab/issues/177
-antigen bundle tom-power/fzf-tab-widgets
+antigen bundle tom-power/fzf-tab-widgets --branch=main
 ```
 
 ### Oh My Zsh
