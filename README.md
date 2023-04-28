@@ -23,8 +23,8 @@ bindkey '^B' 'fzf-tab-complete-bookmarks'
 bindkey '^E' 'fzf-tab-complete-recent-dirs'
 ```
 
-- only includes directories that exist in the completion, as unable to move to deleted ones, can use `dirs` to review them if needed.
-- find persisting dirstack like [this](https://wiki.archlinux.org/title/zsh#Dirstack) useful, ymmv!
+- only includes directories that currently exist, can use `dirs` to review deleted
+- find persisting dirstack like [this](https://wiki.archlinux.org/title/zsh#Dirstack) useful
 
 #### Find
 
@@ -32,7 +32,9 @@ bindkey '^E' 'fzf-tab-complete-recent-dirs'
 bindkey '^F' 'fzf-tab-complete-find'
 ```
 
-find first 10000 files/directories under your current location, dot files/directories excluded
+- list files/directories under your current location
+- limited to first 10000
+- dot files/directories excluded
 
 ## Installation
 
