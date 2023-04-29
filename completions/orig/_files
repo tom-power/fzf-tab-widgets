@@ -1,6 +1,6 @@
 # widgets call fzf-tab-complete which calls _autocd in some conexts
 # https://github.com/Aloxaf/fzf-tab/issues/65#issuecomment-602144985
-autoload +X -Uz  _files
+autoload +X -Uz _files
 functions[_files_orig]=${functions[_files]}
 
 _files() {
