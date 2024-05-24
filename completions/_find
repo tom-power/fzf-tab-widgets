@@ -1,6 +1,0 @@
-_find() {
-  IFS=$'\n'
-  dirs=($(find . -not -path '*/.*' -mindepth 1 | head -10000))
-  unset IFS
-  compadd -a dirs
-}

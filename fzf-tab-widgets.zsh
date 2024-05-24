@@ -1,20 +1,20 @@
 fzf-tab-complete-recent-dirs() {
-  export completeRecentDirs
+  export fzfTabCompleteRecentDirs
   fzf-tab-complete
-  unset completeRecentDirs
+  unset fzfTabCompleteRecentDirs
 }
 zle -N fzf-tab-complete-recent-dirs
 
 fzf-tab-complete-bookmarks() {
-  export completeBookmarks
+  export fzfTabCompleteBookmarks
   fzf-tab-complete
-  unset completeBookmarks
+  unset fzfTabCompleteBookmarks
 }
 zle -N fzf-tab-complete-bookmarks
 
 fzf-tab-complete-find() {
-  export completeFind
+  export fzfTabCompleteFind
   fzf-tab-complete
-  unset completeFind
+  unset fzfTabCompleteFind
 }
 zle -N fzf-tab-complete-find
