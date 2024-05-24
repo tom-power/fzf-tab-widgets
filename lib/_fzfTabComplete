@@ -14,7 +14,7 @@ local _fzfTabCompleteFind() {
 }
 
 local _fzfTabCompleteBookmarks() {
-  compadd -a -f bookmarks
+  compadd -a -f fzfTabBookmarks
 }
 
 _fzfTabComplete() {

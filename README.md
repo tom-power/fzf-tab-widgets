@@ -7,7 +7,7 @@ Some widgets I use with the brilliant [fzf-tab](https://github.com/Aloxaf/fzf-ta
 #### Bookmarks
 
 ```zsh
-export bookmarks=(
+fzfTabBookmarks=(
   ~/bin
   ~/Downloads
   ~/project
