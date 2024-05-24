@@ -1,7 +1,0 @@
-_recentDirs() {
-  dirstackExisting=()
-  for dir in "${dirstack[@]}"; do
-    [[ -d "$dir" ]] && dirstackExisting+=("$dir")
-  done
-  compadd -a -f dirstackExisting
-}

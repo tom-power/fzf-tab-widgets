@@ -1,3 +1,0 @@
-_bookmarks() {
-  compadd -a -f bookmarks
-}

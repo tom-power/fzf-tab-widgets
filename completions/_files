@@ -3,14 +3,7 @@
 autoload +X -Uz _files
 functions[_files_orig]=${functions[_files]}
 
+source $FZF_TAB_WIDGETS_HOME/lib/_fzfTabComplete
 _files() {
-  if [[ -v completeBookmarks ]]; then
-    _bookmarks
-  elif [[ -v completeRecentDirs ]]; then
-    _recentDirs
-  elif [[ -v completeFind ]]; then
-    _find
-  else
-    _files_orig
-  fi
+  _fzfTabComplete _files_orig
 }

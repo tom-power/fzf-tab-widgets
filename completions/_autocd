@@ -3,14 +3,7 @@
 autoload +X -Uz _autocd
 functions[_autocd_orig]=${functions[_autocd]}
 
+source $FZF_TAB_WIDGETS_HOME/lib/_fzfTabComplete
 _autocd() {
-  if [[ -v completeBookmarks ]]; then
-    _bookmarks
-  elif [[ -v completeRecentDirs ]]; then
-    _recentDirs
-  elif [[ -v completeFind ]]; then
-    _find
-  else
-    _autocd_orig
-  fi
+  _fzfTabComplete _autocd_orig
 }
