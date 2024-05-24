@@ -7,7 +7,7 @@ Some widgets I use with the brilliant [fzf-tab](https://github.com/Aloxaf/fzf-ta
 #### Bookmarks
 
 ```zsh
-fzfTabBookmarks=(
+export fzfTabBookmarks=(
   ~/bin
   ~/Downloads
   ~/project
@@ -29,12 +29,12 @@ bindkey '^E' 'fzf-tab-complete-recent-dirs'
 #### Find
 
 ```zsh
+export fzfTabFindKeep=1000
+
 bindkey '^F' 'fzf-tab-complete-find'
 ```
 
-- list files/directories under your current location
-- limited to first 10000
-- dot files/directories excluded
+recursively find files/directories under your current location, dot files/directories excluded, keeps up to $fzfTabFindKeep
 
 ## Installation
 
