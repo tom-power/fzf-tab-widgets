@@ -8,7 +8,7 @@ local _fzfTabCompleteRecentDirs() {
 
 local _fzfTabCompleteFind() {
   IFS=$'\n'
-  dirs=($(find . -not -path '*/.*' -mindepth 1 | head -10000))
+  dirs=($(find . -not -path '*/.*' -mindepth 1 | head -$fzfTabFindKeep))
   unset IFS
   compadd -a dirs
 }
