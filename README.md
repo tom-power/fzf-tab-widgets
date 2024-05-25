@@ -34,7 +34,7 @@ export fzfTabFindKeep=1000
 bindkey '^F' 'fzf-tab-complete-find'
 ```
 
-recursively find files/directories under your current location, dot files/directories excluded, keeps up to $fzfTabFindKeep
+recursively find files/directories under your current location, dot files/directories excluded, keeps up to `$fzfTabFindKeep`.
 
 ## Installation
 
