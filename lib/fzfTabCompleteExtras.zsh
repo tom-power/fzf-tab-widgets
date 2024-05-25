@@ -1,3 +1,4 @@
+#!/bin/zsh
 _fzfTabCompleteFind() {
   IFS=$'\n'
   local dirs=($(find . -not -path '*/.*' -mindepth 1 | head -$fzfTabFindKeep))

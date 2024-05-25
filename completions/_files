@@ -3,7 +3,7 @@
 autoload +X -Uz _files
 functions[_files_orig]=${functions[_files]}
 
-source $FZF_TAB_WIDGETS_HOME/lib/_fzfTabCompleteExtras
+source $FZF_TAB_WIDGETS_HOME/lib/fzfTabCompleteExtras.zsh
 _files() {
   _fzfTabCompleteExtras _files_orig
 }
