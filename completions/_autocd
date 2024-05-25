@@ -3,7 +3,7 @@
 autoload +X -Uz _autocd
 functions[_autocd_orig]=${functions[_autocd]}
 
-source $FZF_TAB_WIDGETS_HOME/lib/_fzfTabCompleteExtras
+source "$FZF_TAB_WIDGETS_HOME/lib/fzfTabCompleteExtras.zsh"
 _autocd() {
   _fzfTabCompleteExtras _autocd_orig
 }
