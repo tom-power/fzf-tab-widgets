@@ -19,6 +19,12 @@ _fzfTabCompleteBookmarks() {
 }
 
 _fzfTabCompleteExtras() {
+  if [[ -n ${_fzfTabCompleteExtrasCalled} ]]; then
+    $1
+    return
+  fi
+  
+  local _fzfTabCompleteExtrasCalled=1
   local completions=(fzfTabCompleteBookmarks fzfTabCompleteRecentDirs fzfTabCompleteFind)
   local completionRun=false
   for completion in "${completions[@]}"; do
