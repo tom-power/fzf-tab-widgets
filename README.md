@@ -1,5 +1,12 @@
 # fzf-tab widgets
 
+> **_NOTE:_**  
+> 
+> Have an intermittent `maximum nested function level reached` error with this, which I'm too dumb to resolve..
+> 
+> trying a different approach at [tom-power/fzf-widgets](https://github.com/tom-power/fzf-widgets)
+
+
 Some widgets I use with the brilliant [fzf-tab](https://github.com/Aloxaf/fzf-tab), ymmv!
 
 ![demo](https://github.com/tom-power/fzf-tab-widgets/blob/main/assets/fzf-tab-widgets-demo.gif)
